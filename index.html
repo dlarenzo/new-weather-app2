@@ -1,194 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Weather App</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  
-  <header>
-    <div class="header-container">
-      <img src="images/amcharts_weather_icons_1.0.0/static/day.svg" alt="weather app icon" class="weather-app-icon"><h1>Weather & News Update</h1>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="images/amcharts_weather_icons_1.0.0/static/day.svg"
+          alt="weather app icon"
+          class="weather-app-icon"
+        />
+        <h1>Weather & News Update</h1>
+      </div>
+    </header>
 
-  </header>
+    <nav>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#home">News</a></li>
+        <li><a href="#home">Weather</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#home">About</a>
+      </div>
+    </nav>
 
-  <nav>
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#home">News</a></li>
-      <li><a href="#home">Weather</a></li>
-      
-    </ul>
-    <div class="nav-right">
-      <a href="#home">About</a>
-    </div>
-  </nav>
-
-  <main>
-    <hr>
-    <section class="weather-section">
-      <div class="page">
-        <h1>LATEST WEATHER</h1>
-        <div class="weather-archive ">
-          <article class="article">
-            <section id="stats">
-              <div class="summary" id="summary">
-                <h2>Weather summary</h2>
-                <h3 id="five-city">Salt Lake City</h3>
-                <p>Currently: <span id="current-desc">Partly Cloudy</span></p>
-                <p>
-                  Tempature:
-                  <span id="current-temp">93</span> °F
-                </p>
-                <p>Wind Chill: <span id="current-windChill">90</span> °F</p>
-                <p>Humidity: <span id="current-humid">25</span>%</p>
-                <p>Wind Speed: <span id="current-windSpeed">N 8</span> mph</p>
-                
+    <main>
+      <hr />
+      <section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="weather-archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary" id="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city">Salt Lake City</h3>
+                  <p>Currently: <span id="current-desc">Partly Cloudy</span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp">93</span> °F
+                  </p>
+                  <p>Wind Chill: <span id="current-windChill">90</span> °F</p>
+                  <p>Humidity: <span id="current-humid">25</span>%</p>
+                  <p>Wind Speed: <span id="current-windSpeed">N 8</span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="https://picsum.photos/400" alt="Random Image" />
               </div>
-            </section>
-            <div>
-              <img src="https://picsum.photos/400" alt="Random Image" />
-            </div>
-          </article>
+            </article>
 
-          <!-- 5 day forecast -->
-          <div class="article-five-day">
-            <article id="forecastContainer">
-              <h2 id="forecastTitle">5 Day Forecast</h2>
-              <h3 id="city">Tooele</h3>
-              <div class="flex">
-                <div class="flex-col">
-                  <span id="dayTitle1" class="col-head">Day 1</span>
-                  <img id="weatherIcon1" class="weatherIcon" src="images/Umbrella.jpg" />
-                  <span class="temp-data">
-                    <span id="data1">105</span>
-                    <span>°F</span>
-                  </span>
-                </div>
-                <div class="flex-col">
-                  <span id="dayTitle2" class="col-head">Day 2</span>
-                  <img id="weatherIcon2" class="weatherIcon" src="images/Sunny.jpg"/>
-                  <div class="temp-data">
-                    <span id="data2">103</span>
-                    <span>°F</span>
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Test City</h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    <span id="dayTitle1" class="col-head">Day 1</span>
+                    <img
+                      id="weatherIcon1"
+                      class="weatherIcon"
+                      src="images/Umbrella.jpg"
+                    />
+                    <span class="temp-data">
+                      <span id="data1">105</span>
+                      <span>°F</span>
+                    </span>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head">Day 2</span>
+                    <img
+                      id="weatherIcon2"
+                      class="weatherIcon"
+                      src="images/Sunny.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data2">103</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head">Day 3</span>
+                    <img
+                      id="weatherIcon3"
+                      class="weatherIcon"
+                      src="images/partlyCloudy.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data3">102</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head">Day 4</span>
+                    <img
+                      id="weatherIcon4"
+                      class="weatherIcon"
+                      src="images/thunderStorms.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data4">95</span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head">Day 5</span>
+                    <img
+                      id="weatherIcon5"
+                      class="weatherIcon"
+                      src="images/partlyCloudy.jpg"
+                    />
+                    <div class="temp-data">
+                      <span id="data5">102</span>
+                      <span>°F</span>
+                    </div>
                   </div>
                 </div>
-                <div class="flex-col">
-                  <span id="dayTitle3" class="col-head">Day 3</span>
-                  <img id="weatherIcon3" class="weatherIcon" src="images/partlyCloudy.jpg"/>
-                  <div class="temp-data">
-                    <span id="data3">102</span>
-                    <span>°F</span>
-                  </div>
-                </div>
-                <div class="flex-col">
-                  <span id="dayTitle4" class="col-head">Day 4</span>
-                  <img id="weatherIcon4" class="weatherIcon" src="images/thunderStorms.jpg"/>
-                  <div class="temp-data">
-                    <span id="data4">95</span>
-                    <span>°F</span>
-                  </div>
-                </div>
-                <div class="flex-col">
-                  <span id="dayTitle5" class="col-head">Day 5</span>
-                  <img id="weatherIcon5" class="weatherIcon" src="images/partlyCloudy.jpg"/>
-                  <div class="temp-data">
-                    <span id="data5">102</span>
-                    <span>°F</span>
-                  </div>
-                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section class="news-section">
+        <div class="page">
+          <h1>LATEST NEWS</h1>
+
+          <!-- HEAD ARTICLE -->
+          <div class="head-article">
+            <article class="article" id="hd-article">
+              <div class="head-article-caption">
+                <h2>
+                  <a id="header-article"> </a>
+                </h2>
+                <p id="header-desc">
+                  Local officials have slated Metropolis to have reached maximum
+                  over population. Superman weighs in on our next steps while
+                  Lex Luther of Lexcorp creates depopulation exercise.
+                </p>
               </div>
             </article>
           </div>
+          <!-- END OF HEADER ARTICLE -->
+
+          <!-- ARTICLES -->
+          <div class="news-archive" id="news-archive">
+            <article class="article news-archive-article">
+              <img
+                id="article-img-1"
+                src="http://placekitten.com/g/200/200"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link" class="article-link">No Article Title</a>
+              </h3>
+              <p id="article-desc-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                eum eaque a cum ab ut earum harum repellat assumenda illum.
+                Earum odio accusantium est, quaerat saepe voluptatum a eaque
+                rem...
+              </p>
+            </article>
+
+            <article class="article news-archive-article">
+              <img
+                id="article-img-1"
+                src="http://placekitten.com/g/200/200"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link" class="article-link">No Article Title</a>
+              </h3>
+              <p id="article-desc-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                eum eaque a cum ab ut earum harum repellat assumenda illum.
+                Earum odio accusantium est, quaerat saepe voluptatum a eaque
+                rem...
+              </p>
+            </article>
+
+            <article class="article news-archive-article">
+              <img
+                id="article-img-1"
+                src="http://placekitten.com/g/200/200"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link" class="article-link">No Article Title</a>
+              </h3>
+              <p id="article-desc-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                eum eaque a cum ab ut earum harum repellat assumenda illum.
+                Earum odio accusantium est, quaerat saepe voluptatum a eaque
+                rem...
+              </p>
+            </article>
+
+            <article class="article news-archive-article">
+              <img
+                id="article-img-1"
+                src="http://placekitten.com/g/200/200"
+                alt="main article"
+              />
+              <h3>
+                <a id="article-link" class="article-link">No Article Title</a>
+              </h3>
+              <p id="article-desc-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                eum eaque a cum ab ut earum harum repellat assumenda illum.
+                Earum odio accusantium est, quaerat saepe voluptatum a eaque
+                rem...
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <hr />
+      </section>
+    </main>
 
-    <section class="news-section">
-      <div class="page">
-        <h1>LATEST NEWS</h1>
+    <footer>
+      &copy; 2024 | LaRenzo DeGraffenreidt | Tooele Technical College <br />
+    </footer>
 
-        <!-- HEAD ARTICLE -->
-        <div class="head-article">
-          <article class="article" id="hd-article">
-            
-            <div class="head-article-caption">
-              <h2>
-                <a id="header-article"> </a>
-              </h2>
-              <p id="header-desc">Local officials have slated Metropolis to have reached maximum over population. Superman weighs in on our next steps while Lex Luther of Lexcorp creates depopulation exercise.</p>
-            </div>
-            
-          </article>
-        </div>
-        <!-- END OF HEADER ARTICLE -->
-
-        <!-- ARTICLES -->
-        <div class="news-archive" id="news-archive">
-          
-          <article class="article news-archive-article" >
-            <img
-              id="article-img-1"
-              src="http://placekitten.com/g/200/200"
-              alt="main article"
-            />
-            <h3>
-              <a id="article-link" class="article-link">No Article Title</a>
-            </h3>
-            <p id="article-desc-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum eaque a cum ab ut earum harum repellat assumenda illum. Earum odio accusantium est, quaerat saepe voluptatum a eaque rem...</p>
-          </article>
-
-          <article class="article news-archive-article" >
-            <img
-              id="article-img-1"
-              src="http://placekitten.com/g/200/200"
-              alt="main article"
-            />
-            <h3>
-              <a id="article-link" class="article-link">No Article Title</a>
-            </h3>
-            <p id="article-desc-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum eaque a cum ab ut earum harum repellat assumenda illum. Earum odio accusantium est, quaerat saepe voluptatum a eaque rem...</p>
-          </article>
-
-          <article class="article news-archive-article" >
-            <img
-              id="article-img-1"
-              src="http://placekitten.com/g/200/200"
-              alt="main article"
-            />
-            <h3>
-              <a id="article-link" class="article-link">No Article Title</a>
-            </h3>
-            <p id="article-desc-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum eaque a cum ab ut earum harum repellat assumenda illum. Earum odio accusantium est, quaerat saepe voluptatum a eaque rem...</p>
-          </article>
-
-          <article class="article news-archive-article" >
-            <img
-              id="article-img-1"
-              src="http://placekitten.com/g/200/200"
-              alt="main article"
-            />
-            <h3>
-              <a id="article-link" class="article-link">No Article Title</a>
-            </h3>
-            <p id="article-desc-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum eaque a cum ab ut earum harum repellat assumenda illum. Earum odio accusantium est, quaerat saepe voluptatum a eaque rem...</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-    
-  </main>
-    
-  <footer>
-    &copy; 2024 | LaRenzo DeGraffenreidt |  Tooele Technical College <br>
-  </footer>
-  
-  <script src="main.js"></script>
-  <script src="news.js"></script>
-</body>
+    <script src="main.js"></script>
+    <script src="news.js"></script>
+    <script src="fiveday.js"></script>
+  </body>
 </html>
